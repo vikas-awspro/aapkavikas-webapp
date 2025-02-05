@@ -1,0 +1,107 @@
+2025-01-23T15:40:24.468+0530 [INFO]  Terraform version: 1.10.2
+2025-01-23T15:40:24.473+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.70.0
+2025-01-23T15:40:24.473+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.23.0
+2025-01-23T15:40:24.473+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2025-01-23T15:40:24.473+0530 [DEBUG] using github.com/zclconf/go-cty v1.15.1-0.20241111215639-63279be090d7
+2025-01-23T15:40:24.473+0530 [INFO]  Go runtime version: go1.23.3
+2025-01-23T15:40:24.473+0530 [INFO]  CLI args: []string{"C:\\softwares\\terraform_1.10.2_windows_386\\terraform.exe", "init", "-upgrade"}
+2025-01-23T15:40:24.478+0530 [TRACE] Stdout is a terminal of width 154
+2025-01-23T15:40:24.478+0530 [TRACE] Stderr is a terminal of width 154
+2025-01-23T15:40:24.478+0530 [TRACE] Stdin is a terminal
+2025-01-23T15:40:24.483+0530 [DEBUG] Attempting to open CLI config file: C:\Users\2312908\AppData\Roaming\terraform.rc
+2025-01-23T15:40:24.486+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2025-01-23T15:40:24.503+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2025-01-23T15:40:24.504+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\2312908\AppData\Roaming\terraform.d\plugins
+2025-01-23T15:40:24.508+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\2312908\AppData\Roaming\HashiCorp\Terraform\plugins
+2025-01-23T15:40:24.508+0530 [INFO]  CLI command args: []string{"init", "-upgrade"}
+2025-01-23T15:40:24.558+0530 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2025-01-23T15:40:24.562+0530 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2025-01-23T15:40:24.562+0530 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2025-01-23T15:40:24.562+0530 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2025-01-23T15:40:24.571+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2025-01-23T15:40:24.610+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v5.82.2 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386
+2025-01-23T15:40:24.626+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/http v3.4.5 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386
+2025-01-23T15:40:24.626+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 5.82.2
+2025-01-23T15:40:24.626+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386 as a candidate package for registry.terraform.io/hashicorp/http 3.4.5
+2025-01-23T15:40:24.731+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform\providers
+2025-01-23T15:40:28.601+0530 [DEBUG] checking for provisioner in "."
+2025-01-23T15:40:28.606+0530 [DEBUG] checking for provisioner in "C:\\softwares\\terraform_1.10.2_windows_386"
+2025-01-23T15:40:28.615+0530 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2025-01-23T15:40:28.615+0530 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2025-01-23T15:40:28.615+0530 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2025-01-23T15:40:28.623+0530 [TRACE] statemgr.Filesystem: read snapshot with lineage "3d6048dd-a4f4-9806-4789-879ba25ac251" serial 476
+2025-01-23T15:40:28.623+0530 [TRACE] ModuleInstaller: installing child modules for . into .terraform\modules
+2025-01-23T15:40:28.625+0530 [DEBUG] Module installer: begin alb
+2025-01-23T15:40:28.625+0530 [TRACE] ModuleInstaller: discarding previous record of alb prior to reinstall
+2025-01-23T15:40:28.625+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\alb prior to install of alb
+2025-01-23T15:40:28.629+0530 [TRACE] ModuleInstaller: alb has local path "../modules-repo/modules/alb"
+2025-01-23T15:40:28.629+0530 [TRACE] ModuleInstaller: alb uses directory from parent: ..\modules-repo\modules\alb
+2025-01-23T15:40:28.667+0530 [DEBUG] Module installer: alb installed at ..\modules-repo\modules\alb
+2025-01-23T15:40:28.668+0530 [DEBUG] Module installer: begin alb_security_groups
+2025-01-23T15:40:28.668+0530 [TRACE] ModuleInstaller: discarding previous record of alb_security_groups prior to reinstall
+2025-01-23T15:40:28.668+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\alb_security_groups prior to install of alb_security_groups
+2025-01-23T15:40:28.671+0530 [TRACE] ModuleInstaller: alb_security_groups has local path "../modules-repo/modules/security_resources"
+2025-01-23T15:40:28.671+0530 [TRACE] ModuleInstaller: alb_security_groups uses directory from parent: ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.699+0530 [DEBUG] Module installer: alb_security_groups installed at ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.699+0530 [DEBUG] Module installer: begin rds_instance
+2025-01-23T15:40:28.699+0530 [TRACE] ModuleInstaller: discarding previous record of rds_instance prior to reinstall
+2025-01-23T15:40:28.699+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\rds_instance prior to install of rds_instance
+2025-01-23T15:40:28.704+0530 [TRACE] ModuleInstaller: rds_instance has local path "../modules-repo/modules/rds"
+2025-01-23T15:40:28.704+0530 [TRACE] ModuleInstaller: rds_instance uses directory from parent: ..\modules-repo\modules\rds
+2025-01-23T15:40:28.727+0530 [DEBUG] Module installer: rds_instance installed at ..\modules-repo\modules\rds
+2025-01-23T15:40:28.727+0530 [DEBUG] Module installer: begin rds_security_groups
+2025-01-23T15:40:28.727+0530 [TRACE] ModuleInstaller: discarding previous record of rds_security_groups prior to reinstall
+2025-01-23T15:40:28.727+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\rds_security_groups prior to install of rds_security_groups
+2025-01-23T15:40:28.732+0530 [TRACE] ModuleInstaller: rds_security_groups has local path "../modules-repo/modules/security_resources"
+2025-01-23T15:40:28.732+0530 [TRACE] ModuleInstaller: rds_security_groups uses directory from parent: ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.734+0530 [DEBUG] Module installer: rds_security_groups installed at ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.734+0530 [DEBUG] Module installer: begin static_content
+2025-01-23T15:40:28.734+0530 [TRACE] ModuleInstaller: discarding previous record of static_content prior to reinstall
+2025-01-23T15:40:28.734+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\static_content prior to install of static_content
+2025-01-23T15:40:28.738+0530 [TRACE] ModuleInstaller: static_content has local path "../modules-repo/modules/static_content"
+2025-01-23T15:40:28.738+0530 [TRACE] ModuleInstaller: static_content uses directory from parent: ..\modules-repo\modules\static_content
+2025-01-23T15:40:28.766+0530 [DEBUG] Module installer: static_content installed at ..\modules-repo\modules\static_content
+2025-01-23T15:40:28.767+0530 [DEBUG] Module installer: begin web_security_groups
+2025-01-23T15:40:28.767+0530 [TRACE] ModuleInstaller: discarding previous record of web_security_groups prior to reinstall
+2025-01-23T15:40:28.767+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\web_security_groups prior to install of web_security_groups
+2025-01-23T15:40:28.773+0530 [TRACE] ModuleInstaller: web_security_groups has local path "../modules-repo/modules/security_resources"
+2025-01-23T15:40:28.773+0530 [TRACE] ModuleInstaller: web_security_groups uses directory from parent: ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.775+0530 [DEBUG] Module installer: web_security_groups installed at ..\modules-repo\modules\security_resources
+2025-01-23T15:40:28.776+0530 [DEBUG] Module installer: begin webserver
+2025-01-23T15:40:28.776+0530 [TRACE] ModuleInstaller: discarding previous record of webserver prior to reinstall
+2025-01-23T15:40:28.776+0530 [TRACE] ModuleInstaller: cleaning directory .terraform\modules\webserver prior to install of webserver
+2025-01-23T15:40:28.782+0530 [TRACE] ModuleInstaller: webserver has local path "../modules-repo/modules/ec2"
+2025-01-23T15:40:28.782+0530 [TRACE] ModuleInstaller: webserver uses directory from parent: ..\modules-repo\modules\ec2
+2025-01-23T15:40:28.809+0530 [DEBUG] Module installer: webserver installed at ..\modules-repo\modules\ec2
+2025-01-23T15:40:28.809+0530 [TRACE] modsdir: writing modules manifest to .terraform\modules\modules.json
+2025-01-23T15:40:28.833+0530 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2025-01-23T15:40:28.833+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2025-01-23T15:40:28.977+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2025-01-23T15:40:28.977+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/versions
+2025-01-23T15:40:29.038+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/http/versions
+2025-01-23T15:40:29.038+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/http/versions
+2025-01-23T15:40:29.330+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2025-01-23T15:40:29.334+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v5.82.2 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386
+2025-01-23T15:40:29.335+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/http v3.4.5 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386
+2025-01-23T15:40:29.336+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 5.82.2
+2025-01-23T15:40:29.336+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386 as a candidate package for registry.terraform.io/hashicorp/http 3.4.5
+2025-01-23T15:40:29.336+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/5.84.0/download/windows/386
+2025-01-23T15:40:29.336+0530 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/hashicorp/aws/5.84.0/download/windows/386
+2025-01-23T15:40:29.430+0530 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_SHA256SUMS
+2025-01-23T15:40:29.430+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_SHA256SUMS
+2025-01-23T15:40:29.624+0530 [DEBUG] GET https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_SHA256SUMS.72D7468F.sig
+2025-01-23T15:40:29.624+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_SHA256SUMS.72D7468F.sig
+2025-01-23T15:40:29.671+0530 [TRACE] providercache.Dir.InstallPackage: installing registry.terraform.io/hashicorp/aws v5.84.0 from https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_windows_386.zip
+2025-01-23T15:40:29.671+0530 [TRACE] HTTP client GET request to https://releases.hashicorp.com/terraform-provider-aws/5.84.0/terraform-provider-aws_5.84.0_windows_386.zip
+2025-01-23T15:40:39.082+0530 [DEBUG] Provider signed by 34365D9472D7468F HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>
+2025-01-23T15:40:45.198+0530 [TRACE] providercache.fillMetaCache: scanning directory .terraform\providers
+2025-01-23T15:40:45.245+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v5.82.2 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386
+2025-01-23T15:40:45.247+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v5.84.0 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\aws\5.84.0\windows_386
+2025-01-23T15:40:45.320+0530 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/http v3.4.5 for windows_386 at .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386
+2025-01-23T15:40:45.321+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\aws\5.82.2\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 5.82.2
+2025-01-23T15:40:45.321+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\aws\5.84.0\windows_386 as a candidate package for registry.terraform.io/hashicorp/aws 5.84.0
+2025-01-23T15:40:45.321+0530 [TRACE] providercache.fillMetaCache: including .terraform\providers\registry.terraform.io\hashicorp\http\3.4.5\windows_386 as a candidate package for registry.terraform.io/hashicorp/http 3.4.5
+2025-01-23T15:41:15.749+0530 [TRACE] providercache.fillMetaCache: using cached result from previous scan of .terraform\providers

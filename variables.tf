@@ -161,7 +161,7 @@ variable "http_port" {
 } */
 variable "outbound_ip_range" {
   type        = string
-  default     = "value"
+  default     = "0.0.0.0/0"
   description = "value"
 }
 variable "ssh_port" {
@@ -200,8 +200,8 @@ variable "description" {
 #RDS Variables 
 
 variable "allocated_storage" {
-  type        = string
-  default     = "value"
+  type        = number
+  default     = 20
   description = "value"
 }
 variable "db_name" {

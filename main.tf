@@ -88,10 +88,9 @@ module "rds_instance" {
   allocated_storage = var.allocated_storage
   db_name           = var.db_name
   engine            = var.engine
-  #engine_version       = "8.0"
-  instance_class = var.instance_class
-  username       = var.username
-  password       = var.password
+  instance_class    = var.instance_class
+  username          = var.username
+  password          = var.password
   #parameter_group_name = "default.mysql8.0"
   private_subnets        = data.aws_subnets.private.ids
   vpc_security_group_ids = [module.rds_security_groups.aws_security_group_id]

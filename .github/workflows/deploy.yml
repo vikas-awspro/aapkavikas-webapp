@@ -5,7 +5,7 @@ on:
       terraform_action:
         type: choice
         description: Select Terraform Action
-        option: 
+        options: 
         - apply
         - destroy
         required: true

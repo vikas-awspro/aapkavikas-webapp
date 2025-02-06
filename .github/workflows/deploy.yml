@@ -9,7 +9,7 @@ on:
         - apply
         - destroy
         required: true
-  #push:
+  push:
     #branches: [ "main" ]
  # pull_request:
   

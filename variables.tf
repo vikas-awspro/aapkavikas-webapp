@@ -1,6 +1,6 @@
 variable "ami" {
   type        = string
-  default     = "test"
+  default     = "test-ami"
   description = "value"
 }
 

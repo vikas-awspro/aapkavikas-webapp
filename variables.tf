@@ -17,7 +17,7 @@ variable "instance_type_dev" {
 
 variable "region" {
   type        = string
-  default     = "us-east-1"
+  default     = "us-east-2"
   description = "value"
 }
 variable "env" {

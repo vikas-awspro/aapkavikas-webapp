@@ -1,5 +1,6 @@
 variable "ami" {
   type        = string
+  default     = "test"
   description = "value"
 }
 
@@ -27,10 +28,12 @@ variable "env" {
 
 variable "keyname" {
   type        = string
+  default     = "test"
   description = "value"
 }
 variable "subnet_id" {
   type        = string
+  default     = "test"
   description = "value"
 
 }

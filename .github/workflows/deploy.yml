@@ -2,15 +2,16 @@ name: 'Terraform'
 on:
   workflow_dispatch:
     inputs:
-      terraform_actions:
+      terraform_action:
         type: choice
-        description: Select Terraform Actions
+        description: Select Terraform Action
         option: 
         - apply
         - destroy
-  push:
-    branches: [ "main" ]
-  pull_request:
+        required: true
+  #push:
+    #branches: [ "main" ]
+ # pull_request:
   
 permissions:
   contents: read

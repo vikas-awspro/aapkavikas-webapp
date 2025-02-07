@@ -65,7 +65,7 @@ jobs:
         tf_actions_comment: true   
     # Generates an execution plan for Terraform
     - name: 'Terraform Plan'
-    if: ${{ github.event.inputs.terraform_action == 'plan' }}
+      if: ${{ github.event.inputs.terraform_action == 'plan' }}
     #  run: terraform plan -input=false
       uses: hashicorp/terraform-github-actions@master 
       with: 

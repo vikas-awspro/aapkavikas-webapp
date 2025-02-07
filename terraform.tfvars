@@ -1,6 +1,6 @@
 ami                = "ami-0c50b6f7dc3701ddd"
 instance_type_prod = "t3.micro"
-instance_type_dev  = "t2.micro"
+instance_type_dev  = "t3.large"
 env                = "dev"
 region             = "ap-south-1"
 keyname            = "webserver-ap-south-1"

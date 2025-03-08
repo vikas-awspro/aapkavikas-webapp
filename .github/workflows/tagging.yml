@@ -8,7 +8,7 @@ jobs:
     name: Automated-Tagging
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       - name: Create Tag
         run: |
           git config --local user.email "action@github.com"
@@ -16,7 +16,7 @@ jobs:
           git tag -a "v${{ github.run_number }}" -m "Release v${{ github.run_number }}"
           git push origin main "v${{ github.run_number }}"
       - name: Create Release
-        uses: actions/create-release@v1
+        uses: actions/create-release@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

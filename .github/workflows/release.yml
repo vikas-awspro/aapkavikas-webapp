@@ -34,7 +34,7 @@ jobs:
     steps:
       
       - name: Checkout Code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo_name }}
           ref: ${{ github.event.inputs.version_tag }}

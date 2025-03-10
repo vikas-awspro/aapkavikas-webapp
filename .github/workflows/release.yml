@@ -6,12 +6,12 @@ on:
         description: 'Name of the repository'
         required: true
         type: string
-        default: 'default'
+        default: 'vikas-awspro/aapkavikas-modules'
       version_tag:
-        description: 'Name of the repository'
+        description: 'Tag value'
         required: true
         type: string
-        default: 'default'
+        default: 'v0.1.0'
       suffix:
         description: 'suffix'
         required: true
@@ -40,10 +40,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git tag -a "custom-rc" -m "Release candidate"
+          git tag -a "${{ github.event.inputs.version_tag }}-rc" -m "Release candidate"
           #git push origin "f0adb1313abd9a43d41d9bb56a521dcf046a6b79"
-          git push origin "custom-rc"
+          git push origin "${{ github.event.inputs.version_tag }}-rc"
           
-          #git push origin main "v${{ github.run_number }}"
 
  

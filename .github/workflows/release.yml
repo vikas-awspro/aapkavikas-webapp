@@ -31,18 +31,17 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          repository: vikas-awspro/aapkavikas-modules
+          repository: ${{ github.event.inputs.repository }}
         #  ref: f0adb1313abd9a43d41d9bb56a521dcf046a6b79
           token: ${{ secrets.REMOTE_GITHUB_ACTION }}
-      - name: Create Release Tag
+      - name: Create Tag
         #env:
          # GITHUB_TOKEN: ${{ secrets.REMOTE_GITHUB_ACTION }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git tag -a "${{ github.event.inputs.version_tag }}-rc" -m "Release candidate"
-          #git push origin "f0adb1313abd9a43d41d9bb56a521dcf046a6b79"
-          git push origin "${{ github.event.inputs.version_tag }}-rc"
+          git tag -a "${{ github.event.inputs.version_tag }}-{{ github.event.inputs.suffix }}" -m "Adding suffix - {{ github.event.inputs.suffix }}"
+          git push origin "${{ github.event.inputs.version_tag }}-{{ github.event.inputs.suffix }}"
           
 
  

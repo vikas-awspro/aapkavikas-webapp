@@ -1,0 +1,43 @@
+name: 'Tagging Module Repos'
+on:
+  workflow_dispatch:
+    inputs:
+      repo_name:
+        description: 'Name of the repository'
+        required: true
+        type: string
+        default: 'default'
+      version_tag:
+        description: 'Name of the repository'
+        required: true
+        type: string
+        default: 'default'
+      suffix:
+        description: 'suffix'
+        required: true
+        type: choice
+        options:
+          - rc
+          - ga
+        default: 'rc'
+        
+
+permissions: 
+  contents: write
+jobs:
+  release_tag:
+    name: Tag Modules Repo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          repository: 'vikas-awspro/aapkavikas-modules'
+          ref: 'f0adb1313abd9a43d41d9bb56a521dcf046a6b79'
+      - name: Create Release Tag
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git tag -a "custom-rc" -m "Release candidate"
+
+          git push origin main "v${{ github.run_number }}"
+ 

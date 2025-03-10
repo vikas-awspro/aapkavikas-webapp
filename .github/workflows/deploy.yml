@@ -10,8 +10,8 @@ on:
         - apply
         - destroy
         required: true
-  push:
-    branches: [ "main" ]
+  #push:
+  #  branches: [ "main" ]
   pull_request:
   
 permissions:

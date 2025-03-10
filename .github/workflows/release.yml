@@ -38,7 +38,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git tag -a "custom-rc" -m "Release candidate"
-          git push origin main "f0adb1313abd9a43d41d9bb56a521dcf046a6b79"
+          git push origin "f0adb1313abd9a43d41d9bb56a521dcf046a6b79"
           
           #git push origin main "v${{ github.run_number }}"
 

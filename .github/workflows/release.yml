@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          repository: ${{ github.event.inputs.repository }}
+          repository: ${{ github.event.inputs.repo_name }}
         #  ref: f0adb1313abd9a43d41d9bb56a521dcf046a6b79
           token: ${{ secrets.REMOTE_GITHUB_ACTION }}
       - name: Create Tag

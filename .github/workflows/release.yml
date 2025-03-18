@@ -21,17 +21,19 @@ on:
           - rc
           - ga
         default: 'rc'
-        
+  pull_request: 
+    branches:
+      - main         
 env: 
-  # ORG_NAME: 'vikas-awspro'
-  # REPO_NAME: 'aapkavikas-modules'
-  # CODE_TAG: 'v0.3.0'
-  # CODE_SUFFIX: 'ga' 
-
   ORG_NAME: 'vikas-awspro'
-  REPO_NAME: ${{ github.event.inputs.repo_name }}
-  CODE_TAG: ${{ github.event.inputs.version_tag }}
-  CODE_SUFFIX: 'ga'
+  REPO_NAME: 'aapkavikas-modules'
+  CODE_TAG: 'v0.1.0'
+  CODE_SUFFIX: 'ga' 
+
+  # ORG_NAME: 'vikas-awspro'
+  # REPO_NAME: ${{ github.event.inputs.repo_name }}
+  # CODE_TAG: ${{ github.event.inputs.version_tag }}
+  # CODE_SUFFIX: 'ga'
 
 permissions: 
   contents: write

@@ -7,12 +7,12 @@ on:
         description: 'Name of the repository'
         required: true
         type: string
-        default: 'vikas-awspro/aapkavikas-modules'
+       # default: 'vikas-awspro/aapkavikas-modules'
       version_tag:
         description: 'Tag value'
         required: true
         type: string
-        default: 'v0.3.0'
+     #   default: 'v0.3.0'
       suffix:
         description: 'suffix'
         required: true
@@ -20,7 +20,7 @@ on:
         options:
           - rc
           - ga
-        default: 'rc'
+     #   default: 'rc'
   pull_request: 
     branches:
       - main         
